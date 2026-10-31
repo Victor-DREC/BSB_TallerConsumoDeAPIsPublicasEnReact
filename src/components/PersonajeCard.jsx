@@ -1,6 +1,6 @@
 function PersonajeCard(props){
 
-    const {poke} = props
+    const {pers} = props
 
     const parteUrl = pers.url.split('/')
 

@@ -11,7 +11,7 @@ function App() {
 
       const datos = await response.json();
 
-      setPersonajes(datos.results.slice(0, 12));
+      setPersonajes(datos.results.slice(0, 15));
     };
 
     obtenerPersonajes();
@@ -21,7 +21,7 @@ function App() {
   <div>
     <h1>Lista de Personajes en Rick and Morty</h1>
     <div>
-      {personales.map((pers)=>{
+      {personajes.map((pers)=>{
         return (
           <PersonajeCard key={pers.name} pers={pers} />
         )
